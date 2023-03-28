@@ -1,197 +1,250 @@
-html, body{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-.iphone {
-    width: 350px;
-    height: 650px;
-    background-color: black;
-    position: absolute;
-    top:calc(50% - 325px);
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    background-color: whitesmoke;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    outline: 2px solid gold;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.camera {
-    background-color: black;
-    width: 6px;
-    height: 6px;
-    margin: 20px 10px 0;
-    border-radius: 3px;
+html, body {
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden;
+  background-color: black;
 }
 
-.sensors{
-    width: 20%;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.area{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 }
 
-.sensor {
-    width: 8px;
-    height: 8px;
-    background-color: black;
-    border-radius: 4px;
+#wrapper{
+  position: absolute;
+  width: 20%;
+  animation: y 3s linear infinite alternate;
+}  
+
+#logo{
+  width: 100%;
+  animation: x 7s linear infinite alternate, color 21s infinite forwards ; 
+  background-color: white;
 }
 
-.microphone {
-    height: 5px;
-    width: 50px;
-    background-color: black;
-    border-radius: 3px;
+@keyframes color{
+ 14.284%{
+  background-color:white;
+ }
+ 14.285%{
+  background-color: gold;;
+ }
+
+ 28.570%{
+  background-color: gold;
+ }
+ 28.571%{
+  background-color: chartreuse;
+ }
+
+ 33.332%{
+  background-color: chartreuse;
+ }
+ 33.333%{
+  background-color:crimson;
+ }
+
+ 42.856%{
+  background-color: crimson;
+ }
+ 42.857%{
+  background-color:darkcyan;
+ }
+
+ 57.142%{
+  background-color: darkcyan;
+ }
+ 57.143%{
+  background-color:rgb(136, 0, 255);
+ }
+
+ 66.665%{
+  background-color: rgb(136, 0, 255);
+ }
+ 66.666%{
+  background-color: bisque;
+ }
+
+
+ 71.427%{
+  background-color: bisque;
+ }
+ 71.428%{
+  background-color: deeppink;
+ }
+
+ 85.713%{
+  background-color: hotpink;
+ }
+ 85.714%{
+  background-color:blueviolet;
+ }
+
+ 99.999%{
+  background-color: blueviolet;
+ }
+ 100%{
+  background-color: white;
+ }
 }
 
-.display {
-    width: 90%;
-    height: 500px;
-    border: 2px solid black;
-    border-radius: 3px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-purple-fantasy-background-starry-sky-night-sky-image_30230.jpg);
-    background-size: cover;
+
+@keyframes x{
+  100% {
+      transform: translateX( calc(100vw - 20vw) );
+  }
 }
 
-.home__button {
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    margin-bottom: auto;
-    outline: 2px solid gold
+@keyframes y{
+  100% {
+      transform: translateY( calc(100vh - 12vh) );
+    }
 }
 
-.status__bar {
-    display: flex;
-    width: 100%;
-    margin: 0;
-    justify-content: space-between;
-    align-items: flex-start;
+
+
+#wrapper1{
+  position: absolute;
+  width: 20%;
+  animation: y 4s linear infinite alternate;
+}  
+
+#logo1{
+  width: 100%;
+  animation: x 8s linear infinite alternate, color1 24s infinite forwards ; 
+  background-color: white;
 }
 
-.connection {
-    margin-left: 5px;
-    display: flex;
-    align-items: flex-start;
+
+@keyframes color1{
+  16.665%{
+   background-color:blueviolet;
+  }
+  16.666%{
+   background-color: hotpink;
+  }
+
+  33.332%{
+   background-color: hotpink;
+  }
+  33.333%{
+   background-color: bisque;
+  }
+
+  49.999%{
+   background-color: bisque;
+  }
+  50%{
+   background-color:rgb(136, 0, 255);
+  }
+
+  66.665%{
+   background-color: rgb(136, 0, 255);
+  }
+  66.666%{
+   background-color: crimson;
+  }
+
+  83.332%{
+   background-color: crimson;
+  }
+  83.333%{
+   background-color:chartreuse;
+  }
+
+  99.999%{
+   background-color: chartreuse;
+  }
+  100%{
+   background-color: blueviolet;
+  }
 }
 
-.connection__text {
-    margin: 0;
-    margin-top: 5px;
+
+
+#wrapper2{
+  position: absolute;
+  width: 20%;
+  animation: y 5s linear infinite alternate;
+}  
+
+#logo2{
+  width: 100%;
+  animation: x 9s linear infinite alternate, color2 45s infinite forwards ; 
+  background-color: white;
 }
 
-.wifi {
-    max-width: 100%;
-    height: 12px;
-    background-size: contain;
-    align-self: center;
-    margin-left: 5px;
-    margin-top: 5px;
-}
 
-.line {
-    height: 5px;
-    width: 30px;
-    background-color: grey;
-    opacity: 0.6;
-    border-radius: 4px;
-}
-
-.top-line {
-    position: absolute;
-    top: 10px;
-    right: calc(50% - 15px);
-}
-
-.bottom-line {
-    position: absolute;
-    bottom: 10px;
-    right: calc(50% - 15px);
-}
-
-.battery {
-    max-width: 100%;
-    height: 20px;
-    background-size: contain;
-    align-self: center;
-    margin-left: 5px;
-}
-
-.time {
-    font-size: 60px;
-    font-weight: lighter;
-    margin-bottom: 0;
-}
-
-.date {
-    font-weight: 400;
-}
-
-.unlock {
-    margin-top: 250px;
-}
-
-.photo__button {
-    width: 20px;
-    height: 20px;
-    align-self: flex-end;
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
-
-.footer {
-    display: flex;
-    width: 100%;
-    flex-direction: row-reverse;
-    height: 100%;
-}
-
-.button {
-    background-color: wheat;
-    border-radius: 2px;
-}
-.button__volume-top {
-    width: 3px;
-    height: 40px;
-    position: absolute;
-    top: 150px;
-    left: -4px;
-}
-
-.button__volume-bottom {
-    width: 3px;
-    height: 40px;
-    position: absolute;
-    top: 200px;
-    left: -4px;
-}
-
-.notifications__button{
-    width: 3px;
-    height: 25px;
-    position: absolute;
-    top: 90px;
-    left: -4px;
-}
-
-.button__on{
-    width: 3px;
-    height: 40px;
-    position: absolute;
-    top: 130px;
-    right: -4px;
+@keyframes color2{
+      11.110%{
+      background-color:chartreuse;
+     }
+     11.111%{
+      background-color: crimson;
+     }
+  
+     22.221%{
+      background-color: crimson;
+     }
+     22.222%{
+      background-color: hotpink;
+     }
+  
+     33.332%{
+      background-color: hotpink;
+     }
+     33.333%{
+      background-color:darkcyan;
+     }
+  
+     44.443%{
+      background-color: darkcyan;
+     }
+     44.444%{
+      background-color:gold;
+     }
+  
+     55.554%{
+      background-color: gold;
+     }
+     55.555%{
+      background-color:rgb(136, 0, 255);
+     }
+  
+     66.665%{
+      background-color: rgb(136, 0, 255);
+     }
+     66.666%{
+      background-color: rgb(213, 224, 107);
+     }
+  
+  
+     77.776%{
+      background-color: rgb(213, 224, 107);
+     }
+     77.777%{
+      background-color: violet;
+     }
+  
+     88.887%{
+      background-color: violet;
+     }
+     88.888%{
+      background-color:blueviolet;
+     }
+  
+     99.999%{
+      background-color: blueviolet;
+     }
+     100%{
+      background-color: chartreuse;
+     }
 }
