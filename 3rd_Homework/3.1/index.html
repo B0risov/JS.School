@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clonify</title>
+    <link rel="stylesheet" href="./pages/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+    <aside class="sidebar">
+        <img class="sidebar__logo" src="images/Branding.svg" alt="branding logo and name">
+        <nav class="sidebar__nav">
+            <section class="sidebar__nav_dashboard">
+                <div class="sidebar__nav_header">
+                    <p class="sidebar__nav_headerText">D A S H B O A R D</p>
+                </div>
+                <div class="sidebar__nav_links">
+                    <div class="sidebar__nav_link-opened">
+                        <div class="link__header_opened">
+                            <img class="link__header_icon_opened" alt="Dashboard Icon" src="images/Stats.svg">
+                            <p class="link__header_name_opened chosen">Dashboard</p>
+                            <img class="link__header_expander_opened" alt="Up Arrow" src="images/Vector.svg">
+                        </div>
+                        <div class="link__subLinks">
+                            <p class="link__subLink_items chosen">Analytics</p>
+                            <p class="link__subLink_items">Finance</p>
+                            <p class="link__subLink_items">Job Board</p>
+                        </div>
+                    </div>
+
+                    <div class="sidebar__nav_link">
+                        <div class="link__header">
+                            <img class="link__header_icon" alt="Dashboard Icon" src="images/email.svg">
+                            <p class="link__header_name">Messages</p>
+                            <img class="link__header_expander" alt="Down Arrow" src="images/chevron-down.svg">
+                        </div>
+                    </div>
+
+                    <div class="sidebar__nav_link">
+                        <div class="link__header">
+                            <img class="link__header_icon" alt="Dashboard Icon" src="images/user.svg">
+                            <p class="link__header_name">Friends</p>
+                            <img class="link__header_expander" alt="Down Arrow" src="images/chevron-down.svg">
+                        </div>
+                    </div>
+
+                    <div class="sidebar__nav_link">
+                        <div class="link__header">
+                            <img class="link__header_icon" alt="Dashboard Icon" src="images/layout-grid.svg">
+                            <p class="link__header_name">Apps</p>
+                            <img class="link__header_expander" alt="Down Arrow" src="images/chevron-down.svg">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="sidebar__nav_Pages">
+                <div class="sidebar__nav_header">
+                    <p class="sidebar__nav_headerText">P A G E S</p>
+                </div>
+
+                <div class="sidebar__nav_links">
+                    <div class="sidebar__nav_link">
+                        <div class="link__header">
+                            <img class="link__header_icon" alt="Dashboard Icon" src="images/Support.svg">
+                            <p class="link__header_name">Help Center</p>
+                            <img class="link__header_expander" alt="Down Arrow" src="images/chevron-down.svg">
+                        </div>
+                    </div>
+    
+                    <div class="sidebar__nav_link">
+                        <div class="link__header">
+                            <img class="link__header_icon" alt="Dashboard Icon" src="images/Folder.svg">
+                            <p class="link__header_name">File Manager</p>
+                            <img class="link__header_expander" alt="Down Arrow" src="images/chevron-down.svg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </nav>
+        <section class="sidebar__footer">
+            <img class="footer__images" alt="Settings" src="images/Settings.svg">
+            <img class="footer__images" alt="Log Out" src="images/logout.svg">
+            <img class="footer__images" alt="Globe" src="images/globe.svg">
+        </section>
+    </aside>
+
+    <main class="body">
+
+        <header class="header">
+            <form class="form">
+                <input type="search" class="form__searchInput" placeholder="Search...">
+            </form>
+            <section class="items">
+                <div class="icons">
+                    <span class="icons__element">
+                        <img class="icons__elementImages" alt="Notifications" src="images/Notification.svg">
+                        <span class="icons__element_offline"></span>
+                    </span>
+                    <span class="icons__element">
+                        <img class="icons__elementImages" alt="Calendar" src="images/calendar.svg">
+                    </span>
+                    <span class="icons__element">
+                        <img class="icons__elementImages" alt="Grid" src="images/layout-grid.svg">
+                    </span>
+                </div>
+                <div class="avatar">
+                    <img class="profilePicture" src="images/Paste image.svg" alt="Profile Picture">
+                    <span class="avatar__indicator_online">
+                </div>
+            </section>
+        </header>
+
+        <header class="mobileHeader">
+                <img src="images/Branding.svg" class="mobileBranding">
+                <div class="avatar">
+                    <img class="profilePicture" src="images/Paste image.svg" alt="Profile Picture">
+                    <span class="avatar__indicator_online">
+                </div>
+                <form class="form">
+                    <input type="search" class="form__searchInput" placeholder="Search...">
+                </form>
+        </header>
+
+
+        <section class="body__main">
+
+            <section class="banner">
+                <div class="banner__texts">
+                    <p class="banner__texts_big">Unlock premium stats</p>
+                    <p class="banner__texts_small">Get up to 10TB of storage for a limited time</p>
+                </div>
+                <button class="banner__button">
+                    <img alt="Bolt Sign" src="images/bolt.svg" class="banner__button_icon">
+                    <p class="banner__button_text">Upgrade</p>
+                </button>
+            </section>
+
+            <section class="metrics">
+                <div class="metrics__card">
+                    <div class="card__content">
+                        <div class="card__header">
+                            <p class="card__title">Revenue</p>
+                            <p class="card__amount">$56,945</p>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__badge_green">
+                                <p class="card__badgeNumber-green">+45%</p>
+                            </div>
+                            <p class="card__from">From 4.6%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="metrics__card">
+                    <div class="card__content">
+                        <div class="card__header">
+                            <p class="card__title">Users</p>
+                            <p class="card__amount">76.8%</p>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__badge_red">
+                                <p class="card__badgeNumber-red">-1.7%</p>
+                            </div>
+                            <p class="card__from">From 4.6%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="metrics__card">
+                    <div class="card__content">
+                        <div class="card__header">
+                            <p class="card__title">New Signups</p>
+                            <p class="card__amount">116</p>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__badge_grey">
+                                <p class="card__badgeNumber-grey">0.00</p>
+                            </div>
+                            <p class="card__from"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="metrics__card">
+                    <div class="card__content">
+                        <div class="card__header">
+                            <p class="card__title">Retention</p>
+                            <p class="card__amount">12.67%</p>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__badge_green">
+                                <p class="card__badgeNumber-green">+0.6%</p>
+                            </div>
+                            <p class="card__from">From 4.6%</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="charts">
+                <div class="charts__header">
+                    <p class="charts__header_text">Performance</p>
+                    <img class="charts__header_dots" src="images/Dots Vertical.svg" alt="vertical dots">
+                </div>
+                <img class="charts__graph" alt="chart" src="images/Axis.svg">
+                <div class="charts__legend">
+                    <div class="legend__item">
+                        <span class="legend__item_blue"></span>
+                        <p class="legend__item__name">Instagram</p>
+                    </div>
+                    <div class="legend__item">
+                        <span class="legend__item_green"></span>
+                        <p class="legend__item__name">Facebook</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="table">
+
+                <div class="table__header">
+                    <p class="table__title">Installed apps</p>
+                    <img class="charts__header_dots" src="images/Dots Vertical.svg" alt="vertical dots">
+                </div>
+
+                <div class="table__body">
+                    
+                    <div class="table__names">
+                        <p class="table__name_source">Source</p>
+                        <p class="table__name_amount">Amount</p>
+                        <p class="table__name_status">Status</p>
+                        <p class="table__name_userid">User ID</p>
+                        <p class="table__name_joined">Joined</p>
+                        <p class="table__name_group">Group</p>
+                    </div>
+
+                    <div class="table__rows">
+                        <div class="table__row">
+                            <div class="table__row__brand">
+                                <img src="images/Brand Logo Box.svg" alt="brand logo" class="table__row__brand_logo">
+                                <p class="table__row__brand_name">Zepplin</p>
+                            </div>
+                            <p class="table__row_amount">686.00</p>
+                            <div class="table__row_active">
+                                <p class="table__row_active-text">Active</p>
+                            </div>
+                            <p class="table__row_userid">114423</p>
+                            <p class="table__row_joined">October</p>
+                            <p class="table__row_group">Design</p>
+                        </div>
+                        <div class="table__row">
+                            <div class="table__row__brand">
+                                <img src="images/Brand Logo Box2.svg" alt="brand logo" class="table__row__brand_logo">
+                                <p class="table__row__brand_name">Figma</p>
+                            </div>
+                            <p class="table__row_amount">864.00</p>
+                            <div class="table__row_pending">
+                                <p class="table__row_pending-text">Pending</p>
+                            </div>
+                            <p class="table__row_userid">76223</p>
+                            <p class="table__row_joined">June</p>
+                            <p class="table__row_group">Finance</p>
+                        </div>
+                        <div class="table__row">
+                            <div class="table__row__brand">
+                                <img src="images/Brand Logo Box3.svg" alt="brand logo" class="table__row__brand_logo">
+                                <p class="table__row__brand_name">Meta</p>
+                            </div>
+                            <p class="table__row_amount">176.00</p>
+                            <div class="table__row_cancelled">
+                                <p class="table__row_cancelled-text">Cancelled</p>
+                            </div>
+                            <p class="table__row_userid">89453</p>
+                            <p class="table__row_joined">March</p>
+                            <p class="table__row_group">Coding</p>
+                        </div>
+                        <div class="table__row">
+                            <div class="table__row__brand">
+                                <img src="images/Brand Logo Box4.svg" alt="brand logo" class="table__row__brand_logo">
+                                <p class="table__row__brand_name">Angular</p>
+                            </div>
+                            <p class="table__row_amount">49.00</p>
+                            <div class="table__row_active">
+                                <p class="table__row_active-text">Active</p>
+                            </div>
+                            <p class="table__row_userid">11467</p>
+                            <p class="table__row_joined">February</p>
+                            <p class="table__row_group">Marketing</p>
+                        </div>
+                        <div class="table__row">
+                            <div class="table__row__brand">
+                                <img src="images/Brand Logo Box5.svg" alt="brand logo" class="table__row__brand_logo">
+                                <p class="table__row__brand_name">Vue</p>
+                            </div>
+                            <p class="table__row_amount">999.00</p>
+                            <div class="table__row_active">
+                                <p class="table__row_active-text">Active</p>
+                            </div>
+                            <p class="table__row_userid">67385</p>
+                            <p class="table__row_joined">October</p>
+                            <p class="table__row_group">Finance</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="table__bottom">
+                    <div class="table__navigation">
+                        <img alt="left arrow" src="images/arrow-left.svg" class="arrow_left">
+                        <p class="table__page"> 1/15</p>
+                        <img alt="right arrow" src="images/arrow-right.svg" class="arrow_right">
+                    </div>
+                </div>
+                
+                
+            </section>
+        </section>
+
+
+    </main>
+    
+</body>
+</html>
