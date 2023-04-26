@@ -6,7 +6,7 @@ const localDB = dataFetch('http://localhost:3004')
 
 const jsonbinAPI = dataFetch('https://api.jsonbin.io/v3/b')
 
-export let load_items = async (): Promise<Item[]> => {
+export const load_items = async (): Promise<Item[]> => {
     return await localDB<Item[]>('items');
 }
 
