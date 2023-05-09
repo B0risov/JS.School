@@ -1,0 +1,38 @@
+.App {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 44px 164px;
+}
+
+.App--light {
+    background: #FFFFFF;
+    color: #1D1D1D;
+}
+
+.App--dark {
+    background: #202020;
+    color: #E2E2E2;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .App {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .App {
+        margin-bottom: 25px;
+
+        padding: 40px 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .App {
+        margin-bottom: 25px;
+
+        padding: 32px 32px;
+    }
+}
